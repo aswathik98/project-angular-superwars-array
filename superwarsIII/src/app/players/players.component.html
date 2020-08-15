@@ -1,0 +1,19 @@
+<div class="arena">
+    <div id="heroes" class="team">
+        <div class="list">
+            <ul class="players">
+                <li class="playerdata" *ngFor="let plyr of player">
+                  <h3>{{plyr.name}}</h3>
+                  <p>{{plyr.strength}}</p>
+                  <img class="image" src='{{plyr.image}}'>
+                  <p>{{plyr.type}}</p>
+                  <hr>
+                </li>
+            </ul>          
+        </div>
+    </div>
+    <div id="score"><p>5-0</p></div>
+    <div id="villains" class="team">
+    </div>
+</div>
+<footer class="footer">Made with <img src="../../assets/Vector.svg"> by ProGrad</footer>
